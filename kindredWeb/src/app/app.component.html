@@ -1,0 +1,22 @@
+<div class="cont d-flex justify-content-center align-items-center flex-column">
+
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" (change)="fileChangeEvent($event)">
+    <label class="custom-file-label">Choose file</label>
+  </div>
+
+  
+    <img src="http://192.168.29.19:81/stream" (change)="fileChangeEvent($event)" crossorigin='anonymous'>
+  
+
+  
+    <img [src]="imageSrc" #img crossorigin='anonymous'>
+  
+
+  <div class="list-group">
+    <div class="list-group-item" *ngFor="let prediction of predictions">
+      {{prediction.className}} - {{prediction.probability}}
+    </div>
+  </div>
+
+</div>
