@@ -14,7 +14,7 @@ The logo is of eve from the movie: Wall-E.
 ## Some Description
 ![Alt text](../screenshot/2.png "Description")
 
-## Some Description
+## ESP32 LiveStream
 This Shows the circuit and the live video stream from ESP32 CAM AI thinker and the model predicting the object and sending the values of accuracy.
 ![Alt text](../screenshot/3.png "Live Stream")
 
