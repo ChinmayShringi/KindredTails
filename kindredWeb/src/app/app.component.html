@@ -1,22 +1,146 @@
-<div class="cont d-flex justify-content-center align-items-center flex-column">
+<top-nav></top-nav>
+<!-- Wrapper -->
+<div id="wrapper" class="divided">
+  <!-- One -->
+  <section
+    class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+  >
+    <div class="content">
+      <h1>KindredTails</h1>
+      <p class="major">
+        A project towards child security. So that our children could be
+        protected and explore.
+      </p>
+    </div>
+    <img src="assets/logo.png" alt="" />
+  </section>
 
-  <div class="custom-file">
+  <!-- Two -->
+  <section
+    class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+    id="first"
+  >
+    <div class="content">
+      <h2>What is it?</h2>
+      <p class="major">
+        Child protection is the safeguarding of children from violence,
+        exploitation, abuse, and neglect. Article 19 of the UN Convention on the
+        Rights of the Child provides for the protection of children in and out
+        of the home
+      </p>
+    </div>
+
+    <img
+      src="https://images.unsplash.com/photo-1483193722442-5422d99849bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+      alt=""
+    />
+  </section>
+
+  <!-- Three -->
+  <section
+    class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+  >
+    <div class="content">
+      <h2>The Circuit</h2>
+      <p>The Components used are</p>
+      <ul>
+        <li>ESP32 CAM WIFI</li>
+        <li>OV2640 Camera (2 MP)</li>
+        <li>SIM800L COM Module</li>
+        <li>ESP32 AUDIO Module (MICROPHONE)</li>
+      </ul>
+    </div>
+    <div class="image">
+      <img
+        src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+        alt=""
+      />
+    </div>
+  </section>
+
+  <!-- Four -->
+  <section
+    class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+  >
+    <div class="content">
+      <div
+        class="cont d-flex justify-content-center align-items-center flex-column"
+      >
+        <!-- <div class="custom-file">
     <input type="file" class="custom-file-input" (change)="fileChangeEvent($event)">
     <label class="custom-file-label">Choose file</label>
-  </div>
+  </div> -->
 
-  
-    <img src="http://192.168.29.19:81/stream" (change)="fileChangeEvent($event)" crossorigin='anonymous'>
-  
+        <!-- <img src="http://192.168.29.19:81/stream" (change)="fileChangeEvent($event)" crossorigin='anonymous' alt="Video Stream"> -->
 
-  
-    <img [src]="imageSrc" #img crossorigin='anonymous'>
-  
+        <!-- <img [src]="imageSrc" #img crossorigin='anonymous'> -->
 
-  <div class="list-group">
+         <div class="list-group">
     <div class="list-group-item" *ngFor="let prediction of predictions">
-      {{prediction.className}} - {{prediction.probability}}
+      <h3>{{prediction.className}} - {{prediction.probability}}</h3>
     </div>
   </div>
+        <!-- <h3>
+          Our servers are currently down! This is the server and model detection
+          area!
+        </h3> -->
+      </div>
+    </div>
+    <div class="image">
+      <img [src]="imageSrc" #img crossorigin="anonymous" />
+    </div>
+  </section>
 
+  <!-- Five -->
+  <section class="wrapper style1 align-center">
+    <div class="inner">
+      <h2>What our project provided</h2>
+      <p>
+        We are addressing a wide range of problems being faced by the society
+        due to lack of awareness and sense of responsibility. In the 21st
+        century, with the rise in statistical data for working parents, the most
+        common option opted by them are daycare centers. When parents drop their
+        children off at daycare, they expect that their kids will be safe. This
+        is only possible with the proper security measures in place, such as
+        security cameras, access control and visitor protocol. Security breaches
+        can accidentally allow unauthorized people inside the facility, putting
+        children at risk of kidnapping or injury. A few of them are listed below
+        and our product helps in reducing them.
+      </p>
+
+      <h3>Child Abuse and bullying:</h3>
+      <p>
+        According to the data provided by the government, everyday 109 children
+        are abused on daily basis (REPORTED CASES). Our product helps in
+        identifying the voice patterns and send signal to parent if any hate
+        speech, negative or suspicious comments are made by the speaker.
+      </p>
+
+      <h3>Human Trafficking and Kidnapping:</h3>
+      <p>
+        The count of people victim to human trafficking yearly is 6k (5264 in
+        2018) and are the cases that are reported by their kin. Our product uses
+        geolocation to gain access to the user’s location and if the location is
+        detected outside of safe area provided by their parents, an alert is
+        sent to the customer showing the current location and thereby seeking
+        officials help.
+      </p>
+
+      <h3>Allergies:</h3>
+      <p>
+        Children are allergic to certain food and may be exposed to them by
+        carelessness of the daycare officials. Our product is integrated with
+        OVA2640 camera equipped with image recognition to identify if the food
+        kept in front of them is healthy for them or not, as listed by their
+        parents.
+      </p>
+      <h3>Temperature and Pollution:</h3>
+      <p>
+        With the rise in us of air conditioners and air pollution children are
+        subjected to cold temperatures and bad air. Our product will be equipped
+        with IR sensors for temperature measurement and MQ135 to keep the
+        quality of air in check.
+      </p>
+    </div>
+  </section>
 </div>

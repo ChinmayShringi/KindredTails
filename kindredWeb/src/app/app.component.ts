@@ -27,6 +27,9 @@ export class AppComponent {
       await tf.nextFrame();
     }, 3000);
   }
+  fileChangeEvent($event){
+    console.log($event);
+  }
 
   async ngAfterViewInit() {
     const vid = this.video.nativeElement;
