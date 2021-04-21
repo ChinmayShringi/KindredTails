@@ -63,6 +63,8 @@ class _CameraViewState extends State<CameraView> with WidgetsBindingObserver {
     cameras = await availableCameras();
 
     // cameras[0] for rear-camera
+    // cameraController =
+    //     CameraController(cameras[0], ResolutionPreset.low, enableAudio: false);
     cameraController =
         CameraController(cameras[0], ResolutionPreset.low, enableAudio: false);
 

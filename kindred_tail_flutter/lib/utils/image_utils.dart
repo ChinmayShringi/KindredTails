@@ -8,6 +8,7 @@ import 'package:path_provider/path_provider.dart';
 class ImageUtils {
   /// Converts a [CameraImage] in YUV420 format to [imageLib.Image] in RGB format
   static imageLib.Image convertCameraImage(CameraImage cameraImage) {
+    print(convertYUV420ToImage('http://192.168.29.19:81/stream' as CameraImage).data);
     if (cameraImage.format.group == ImageFormatGroup.yuv420) {
       return convertYUV420ToImage(cameraImage);
     } else if (cameraImage.format.group == ImageFormatGroup.bgra8888) {
